@@ -4,7 +4,9 @@
   "description": "simple chat app using socket.io -  http://socket.io/get-started/chat/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
   "homepage": "https://github.com/shabith/simple-chat-app",
   "dependencies": {
     "express": "^4.9.5",
-    "socket.io": "^1.1.0"
-  }
+    "socket.io": "^1.1.0",
+    "snyk": "^1.18.0"
+  },
+  "snyk": true
 }
